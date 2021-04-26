@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/hinh"
+        android:layout_width="405dp"
+        android:layout_height="265dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/images__2__1" />
+
+    <TextView
+        android:id="@+id/nameProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
+        android:text="TextView"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/hinh"
+        app:layout_constraintTop_toBottomOf="@+id/hinh" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="TextView"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/nameProduct"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nameProduct"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/soluong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnTru"
+        app:layout_constraintStart_toEndOf="@+id/btnTru"
+        app:layout_constraintTop_toTopOf="@+id/btnTru" />
+
+    <TextView
+        android:id="@+id/quantity2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Product Details"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnTru"
+        app:layout_constraintTop_toBottomOf="@+id/btnTru" />
+
+    <TextView
+        android:id="@+id/mota"
+        android:layout_width="323dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="20dp"
+        android:text="ONE OF A KIND YACHT  INTERIOR IS MADE TO FIT YOUR BOAT TO MAKE IT AS COMFORTABLE AS YOUR HOUSE   "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quantity2" />
+
+    <ImageButton
+        android:id="@+id/btnCong"
+        android:layout_width="43dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="29dp"
+        app:layout_constraintBottom_toBottomOf="@+id/soluong"
+        app:layout_constraintStart_toEndOf="@+id/soluong"
+        app:layout_constraintTop_toTopOf="@+id/soluong"
+        app:srcCompat="@drawable/btnadd" />
+
+    <ImageButton
+        android:id="@+id/btnTru"
+        android:layout_width="46dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/nameProduct"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/nameProduct"
+        app:layout_constraintTop_toBottomOf="@+id/nameProduct"
+        app:srcCompat="@drawable/btntru" />
+
+    <Button
+        android:id="@+id/btnAddToCard"
+        android:layout_width="413dp"
+        android:layout_height="49dp"
+        android:backgroundTint="#FF9800"
+        android:text="Add to Cart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/mota"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="@+id/mota" />
+</androidx.constraintlayout.widget.ConstraintLayout>
